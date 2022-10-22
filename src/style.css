@@ -1,1 +1,68 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+.card {
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center; /* left and right */
+  align-items: center; /*upp and down */
+  background-color: white;
+  position: relative;
+  /* font-size: 70px; */
+  font-size: 4em;
+  font-family: "Times New Roman";
+}
+
+body {
+  background-color: green;
+  display: flex;
+  justify-content: center; /* left and right */
+  align-items: center; /*upp and down */
+  height: 100vh;
+}
+
+.head,
+.footer {
+  position: absolute; /* absolute to the relative closest parent */
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  /* Worked with absolute and relative (top, left, bottom, right)
+    Worked with background-image (background size) */
+}
+
+.head {
+  top: 10px;
+  left: 10px;
+}
+
+.footer {
+  bottom: 10px;
+  right: 10px;
+  /* transform: rotate(180deg); */
+  transform: scale(-1, -1);
+}
+
+.spade .head,
+.spade .footer {
+  background-image: url("//cdn.pixabay.com/photo/2013/07/12/12/01/suit-of-spades-145116__340.png");
+  /* .parent-class .child-class */
+}
+
+.club .head,
+.club .footer {
+  background-image: url("//i.pinimg.com/736x/a8/1e/b2/a81eb27cf9083c1a0f0ba96ba9eecca5--yellow-brick-road-the-club.jpg");
+  /* .parent-class .child-class */
+}
+
+.diamond .head,
+.diamond .footer {
+  background-image: url("//upload.wikimedia.org/wikipedia/en/thumb/1/1f/Card_diamond.svg/174px-Card_diamond.svg.png");
+  /* .parent-class .child-class */
+}
+
+.heart .head,
+.heart .footer {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Card_heart.svg/866px-Card_heart.svg.png");
+  /* .parent-class .child-class */
+}
